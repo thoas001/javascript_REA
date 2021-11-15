@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <title>Weerapp Stefan & Thomas</title>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      async
+      defer
+    ></script>
+    <script src="js/jquery-3.6.0.min.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+      integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer
+    ></script>
+    <script src="js/script.js" async defer></script>
+  </head>
+  <body>
+    <canvas id="canvas" style="display: none"></canvas>
+    <div id="container">
+      <header>
+        <div id="locationBox">
+          <input id="locationFinder" type="text" placeholder="Zoek op plaats" />
+        </div>
+        <h1 id="weatherMessage">Het is vandaag niet goed weer</h1>
+      </header>
+      <main>
+        <div id="tabs">
+          <ul>
+            <li><a href="#weatherDetails" class="button">Weather</a></li>
+            <li><a href="#forecast" class="button">Forecast</a></li>
+          </ul>
+          <div id="weatherDetails">
+            <h2>Weer</h2>
+          </div>
+          <div id="forecast"></div>
+        </div>
+        <div id="weatherMap">
+          <!-- leave empty -->
+        </div>
+      </main>
+      <footer>
+        <div class="copyright" align="center">
+	  <script>
+	    document.write('&copy;' );
+	    document.write(' 2021 - ');
+	    document.write(new Date().getFullYear());
+	    document.write(' Stefan Diks en Thomas van Oenen - All Rights Reserved.');
+	  </script>
+	</div>      
+	</footer>
+    </div>
+  </body>
+</html>
